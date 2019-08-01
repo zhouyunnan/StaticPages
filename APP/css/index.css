@@ -1,0 +1,25 @@
+html,body{width: 10.24rem;font-family:microsoft yahei;overflow-x: hidden;overflow-y: auto;background:url("../images/bottom_bj.png") #f2f2f2;background-repeat: no-repeat;background-attachment:fixed;background-position:bottom;background-size: 100%;}
+body::-webkit-scrollbar{ display:none}
+#app{ width: 100%;height: auto;margin: 0 auto;}
+/*     底部菜单 */
+.bottomMenu{position: fixed;bottom: 0px; width: 100%;height: 1rem;background: white;border-top: 1px solid  #ccccce;display: -webkit-flex; display: flex; }
+.menu{flex: 1;color: #929294;text-align: center;}
+.menu_ico{position: relative;width: 0.48rem;height: 0.48rem;margin:0 auto;margin-top: 0.06rem;}
+.menu_ico span{position: absolute; width: 100%;height: 100%; display: block;left: 50%; }
+.icon-zhuye{ font-size: 0.4rem;margin-left: -0.2rem;}
+.icon-yunpan{font-size: 0.47rem;top: -0.03rem; margin-left: -0.235rem;}
+.icon-fenxiang{font-size: 0.35rem; margin-left: -0.26rem;top: 0.04rem;}
+.icon-chuanshuliebiao{font-size: 0.4rem;margin-left: -0.23rem; top: -0.03rem;}
+.icon-wode{font-size: 0.48rem;margin-left: -0.26rem; top: -0.05rem;}
+.menu_tit{margin-top: 0.03rem;font-size: 0.24rem;}
+.menu_active{color: #3c8bcd}
+/*  中间部分 */
+.main{ float: left;width: 100%;height: auto;background:url("../images/header_bj.png") no-repeat;background-size:100% 4.57rem;padding-bottom: 2rem;overflow-x: hidden; }
+.main_tit{color: white;font-size: 0.5rem;text-align: center;margin-top: 0.6rem;}
+.inspectionquery{ width: calc(100% - 0.35rem);background: white;border-radius: 0.2rem; margin: 0 auto;margin-top: 0.5rem; padding-bottom: 0.6rem;}
+.inspectionquery_tit{color: #333333;font-size: 0.36rem;padding: 0.48rem 0.48rem 0.1rem 0.48rem;line-height: 0.48rem;}
+.inspectionquery_box{width:calc(100% - 0.6rem);margin: 0 auto;display: -webkit-flex; display: flex;}
+.inspectionquery_nav{margin: 0.2rem;flex: 1;}
+.inspectionquery_nav_box{width: 1.2rem;height: 1.2rem;margin: 0 auto;border-radius: 0.6rem; overflow: hidden; }
+.inspectionquery_nav_box img{ width: 100%; }
+.inspectionquery_nav_tit{ width: 100%;text-align: center;margin-top: 0.14rem;font-size: 0.22rem;color: #6f6f70;}
