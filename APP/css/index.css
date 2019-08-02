@@ -20,6 +20,10 @@ body::-webkit-scrollbar{ display:none}
 .inspectionquery_tit{color: #333333;font-size: 0.36rem;padding: 0.48rem 0.48rem 0.1rem 0.48rem;line-height: 0.48rem;}
 .inspectionquery_box{width:calc(100% - 0.6rem);margin: 0 auto;display: -webkit-flex; display: flex;}
 .inspectionquery_nav{margin: 0.2rem;flex: 1;}
-.inspectionquery_nav_box{width: 1.2rem;height: 1.2rem;margin: 0 auto;border-radius: 0.6rem; overflow: hidden; }
-.inspectionquery_nav_box img{ width: 100%; }
+.inspectionquery_nav_box{width: 1.2rem;height: 1.2rem;margin: 0 auto;border-radius: 0.6rem; overflow: hidden;position: relative;}
+.inspectionquery_nav_box span{text-align: center;font-size: 0.35rem;line-height: 1.2rem}
+.inspectionquery_nav_box img{ width: 0.64rem;height: 0.64rem;position: absolute;left: 50%;top: 50%;margin-left: -0.32rem;margin-top: -0.32rem}
 .inspectionquery_nav_tit{ width: 100%;text-align: center;margin-top: 0.14rem;font-size: 0.22rem;color: #6f6f70;}
+.inspectionquery_nav_box_bj1{background: #e3f4ff}
+.inspectionquery_nav_box_bj2{background: #fff4ec}
+.inspectionquery_nav_box_bj3{background: #fff6f6}
