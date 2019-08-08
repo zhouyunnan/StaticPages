@@ -1,13 +1,14 @@
 
     //初始化宽度
     function be() {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 19.20 + "px";
         if ($(window).width() > 992) {
             $("#banner_list img").css({
                 "width": $("#banner").width() + "px",
                 "height": $(".c_r_t_last").height() + "px",
             });
             $(".news_lists").css({
-                "height": $(".c_r_t_last").height() + "px",
+                "height": $("#banner").outerHeight() + "px",
             });
             $(".news_list_content").css({
                 "height": $(".news_list_tab").height() + "px",
@@ -16,6 +17,16 @@
                "height": ($(".content_right").height() - $(".c_r_tit").height() - $(".c_r_t_last").height() - 10) + "px"
             });
         } else {
+            $(".news_lists").css({
+                "height": "auto"
+            });
+
+            $(".c_r_t_sec > .row").css({
+                "height":"auto"
+             });
+            $(".news_list_content").css({
+                "height": "auto"
+            });
             $("#banner_list img").css({
                 "width": $("#banner").width() + "px",
                 "height": $("#banner_box").height() + "px",
@@ -27,46 +38,21 @@
         be();
     });
 
-    //轮播图
-    var t = n = 0, count;
-    $(document).ready(function () {
-        count = $("#banner_list a").length;
-        $("#banner_list a:not(:first-child)").hide();
-        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
-        $("#banner_info").click(function () { window.open($("#banner_list a:first-child").attr('href'), "_blank") });
-        $("#banner li").click(function () {
-            var i = $(this).attr("inx") - 1;//获取Li元素内的值，即1，2，3，4
-            n = i;
-            if (i >= count) return;
-            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
-            $("#banner_info").unbind().click(function () { window.open($("#banner_list a").eq(i).attr('href'), "_blank") })
-            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
-            document.getElementById("banner").style.background = "";
-            $(this).toggleClass("on");
-            $(this).siblings().removeAttr("class");
-        });
-        t = setInterval("showAuto()", 4000);
-        $("#banner").hover(function () { clearInterval(t) }, function () { t = setInterval("showAuto()", 4000); });
-    })
-    function showAuto() {
-        n = n >= (count - 1) ? 0 : ++n;
-        $("#banner li").eq(n).trigger('click');
-    }
+    
 
     //右侧菜单
     $("#menubtn").on("click",function(){
         let thiz = this;
         $(".right_abso").animate({
             right:"0px"
-        },function(){
-           
+        },200,function(){
             $(thiz).css("opacity","0");
         });
     });
     $("#close").on("click",function(){
         $(".right_abso").animate({
             right:"-100%"
-        },function(){
+        },200,function(){
             $("#menubtn").css("opacity","1");
         });
     });

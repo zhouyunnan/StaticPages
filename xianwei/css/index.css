@@ -1,15 +1,17 @@
+
 @media screen and (max-width: 992px) {
     .c_r_tit {
         position: relative;
-        width: calc(100% - 10px);
+        width: calc(100% - 20px);
         text-align: center;
         color: #474747;
         font-weight: bold;
-        font-size: 1.5vh;
+        font-size: 14px;;
         height: 30px;
-        line-height: 30px;
+        line-height: 20px;
         margin: 0 auto;
-        margin-top: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -33,6 +35,31 @@
         height: 60px;
     }
 }
+@media screen and (min-width:991px) and (max-width:1400px){
+    .c_r_tit {
+        position: relative;
+        width: calc(100% - 20px);
+        text-align: center;
+        color: #474747;
+        font-weight: bold;
+        font-size: 24px;
+        height: 70px;
+        line-height: 70px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .c_r_tit img {
+        position: absolute;
+        left: 0px;
+        height: 60px;
+    }
+}
+
+
+
+
+
 
 .c_r_t_last {
     width: calc(100% - 20px);
@@ -137,16 +164,23 @@
     width: 100%;
     height: 50%;
 }
-
+#xjyx_btn_active{
+    border: 1px solid #bb231c;
+    color: #bb231c;
+}
+#xjyx_btn_active > .xjxx_btn_l{
+    background: #bb231c;
+}
 .xjyx_btn {
     position: relative;
-    border: 1px solid #bb231c;
+    border: 1px solid #d1d1d1;
     border-radius: 5px;
     width: 80%;
     height: 90%;
     margin-top: 10%;
     text-align: center;
-    cursor: pointer
+    cursor: pointer;
+    color: #6b6a6a;
 }
 
 .xjxx_btn_l {
@@ -154,12 +188,15 @@
     width: 3px;
     height: 60%;
     left: 0px;
-    background: #bb231c;
+    background: #808080;
     top: 20%;
 }
 
 .xjxx_ico {
     padding-top: 20%;
+}
+.xjxx_ico span{
+    font-size: 20px;
 }
 
 .xjxx_tit {
@@ -167,7 +204,6 @@
     width: 16px;
     margin: 0 auto;
     padding-top: 10%;
-    color: #bb231c;
 }
 
 .sanjiao {
@@ -242,6 +278,7 @@
     font-size: 13px;
     right: 0px;
     bottom: 4%;
+    color: #bb231c;
 }
 
 .c_r_t_sec {
@@ -372,9 +409,14 @@
        height: 150px;
    }
  }
-@media screen and (max-width: 1566px) {
-    .c_r_t_sec_r_img1,
-    .c_r_t_sec_r_img2 {
-        display: none;
-    }
-}
+ @media screen and (max-width: 1366px) {
+     .c_r_t_sec_r_img1 {
+         display: none;
+     }
+ }
+ @media screen and (max-width: 996px) {
+     .c_r_t_sec_r_img1,
+     .c_r_t_sec_r_img2 {
+         display: none;
+     }
+ }

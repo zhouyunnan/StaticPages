@@ -203,9 +203,12 @@
 }
 
 .content_nav ul li {
+    position: relative;
     float: left;
     width: 100%;
-    height: 70px;
+    height: 0.5rem;
+    min-height: 60px;
+    max-height: 90px;
     cursor: pointer;
     border-bottom: 1px solid #2c5c98;
 }
@@ -214,22 +217,26 @@
     background: #103c75f5;
 }
 
-.content_nav_ico,
 .content_nav_tit {
-    float: left;
+    position: absolute;
+    height: 16px;
     font-size: 16px;
     color: white;
-    line-height: 70px;
-    padding-left: 35px;
+    top: 50%;
+    left: 70px;
+    margin-top: -8px;
 }
-
-.content_nav_ico {
-    padding-left: 25px;
+.content_nav_ico{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: 20px;
 }
-
-.content_nav_ico,
 .content_nav_ico img {
-    width: 45px;
+    width: 100%;
+    height: 100%;
 }
 
 .content_nav_active {
