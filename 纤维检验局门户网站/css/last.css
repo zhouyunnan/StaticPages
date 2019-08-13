@@ -1,13 +1,5 @@
 
-      .content_nav ul li {
-          position: relative;
-          float: left;
-          width: 100%;
-          height: 0.8rem;
-          min-height: 70px;
-          cursor: pointer;
-          border-bottom: 1px solid #2c5c98;
-      }
+
 
 @media screen and (max-width: 992px){
     #content_r_banner{

@@ -10,302 +10,451 @@
     <link rel="stylesheet" href="css/ini.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <!--   党的建设 -->
+    <link rel="stylesheet" href="css/last.css">
+    <script src="js/last.js"></script>
+
+
     <link rel="stylesheet" href="fontico/iconfont.css">
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <style>
-  
+
 </style>
 
 <body>
     <div id="APP">
-        
-
-    <!-- 手机顶部菜单 -->
-    <div id="mobile_header"  class="visible-xs-block visible-sm-block ">
-        <div class="m_menubtn" id="m_menubtn"></div>
-        <div class="m_fom">
+        <!-- 手机顶部菜单 -->
+        <div id="mobile_header" class="visible-xs-block visible-sm-block ">
+            <div class="m_menubtn" id="m_menubtn"></div>
+            <div class="m_fom">
                 <button type="submit" class="btn btn-default" id="sousuobtn">全站搜索</button>
-                <input type="email" class="form-control" id="text" >
+                <input type="email" class="form-control" id="text">
+            </div>
         </div>
-    </div>
-    <div id="mobile_nav_box" zt="0" class="visible-xs-block visible-sm-block ">
+        <div id="mobile_nav_box" zt="0" class="visible-xs-block visible-sm-block ">
             <ul class="m_content_nav_ul">
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico7.png" /></div>
-                        <div class="m_content_nav_tit">网站首页</div>
-                    </li>
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico6.png" /></div>
-                        <div class="m_content_nav_tit">信息公开</div>
-                    </li>
-                    <li  id="m_left_nav">
-                        <div class="m_content_nav_ico"><img src="images/ico5.png" /></div>
-                        <div class="m_content_nav_tit">党的建设</div>
-                    </li>
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico2.png" /></div>
-                        <div class="m_content_nav_tit">办事大厅</div>
-                    </li>
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico4.png" /></div>
-                        <div class="m_content_nav_tit">公共参与</div>
-                    </li>
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico3.png" /></div>
-                        <div class="m_content_nav_tit">专题栏目</div>
-                    </li>
-                    <li>
-                        <div class="m_content_nav_ico"><img src="images/ico1.png" /></div>
-                        <div class="m_content_nav_tit">纤检风采</div>
-                    </li>
-                </ul>
-    </div>
-
-    <!-- 手机时隐藏 -->
-    <div id="menubtn" class="visible-md-block visible-lg-block"></div>
-    <div  id="right_abso" class="right_abso visible-md-block visible-lg-block">
-        <ul>
-             <li>
-                <div class="abso_img"><img src="images/weixin.png" /></div>
-                <div class="abso_tit">微信公众号</div>
-            </li>
-            <li>
-                <div class="abso_img"><img src="images/xinglang.png" /></div>
-                <div class="abso_tit">新浪微博</div>
-            </li>
-            <li>
-                <div class="abso_img"><img src="images/weibo.png" /></div>
-                <div class="abso_tit">腾讯微博</div>
-            </li>
-            <li>
-                <div class="abso_img"><img src="images/youjian2.png" /></div>
-                <div class="abso_tit">邮件订阅</div>
-            </li>
-            <li>
-                <div class="abso_img"><img src="images/kefu.png" /></div>
-                <div class="abso_tit">咨询投诉</div>
-            </li>
-            <li>
-                <div class="abso_img"><img src="images/shouji.png" /></div>
-                <div class="abso_tit">移动应用</div>
-            </li>
-
-        </ul>
-    </div>
-    <div class="bottom_abso visible-md-block visible-lg-block">
-        <div class="bottom_abso_msg"> <span>主办单位：四川纤维检验局 </span>
-            <span>版权所有：四川省纤维检验局 | Copyright (C) 2005-2016 SCFI. All Rights Reserved. 蜀ICP备18020047号-1</span>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico7.png" /></div>
+                    <div class="m_content_nav_tit">网站首页</div>
+                </li>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico6.png" /></div>
+                    <div class="m_content_nav_tit">信息公开</div>
+                </li>
+                <li id="m_left_nav">
+                    <div class="m_content_nav_ico"><img src="images/ico5.png" /></div>
+                    <div class="m_content_nav_tit">党的建设</div>
+                </li>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico2.png" /></div>
+                    <div class="m_content_nav_tit">办事大厅</div>
+                </li>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico4.png" /></div>
+                    <div class="m_content_nav_tit">公共参与</div>
+                </li>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico3.png" /></div>
+                    <div class="m_content_nav_tit">专题栏目</div>
+                </li>
+                <li>
+                    <div class="m_content_nav_ico"><img src="images/ico1.png" /></div>
+                    <div class="m_content_nav_tit">纤检风采</div>
+                </li>
+            </ul>
         </div>
-        <div class="bottom_abso_ico">
-            <a href="#" class="dzjg"><img src="images/dzjg.png" /></a>
-            <a href="#" class="zfjg"><img src="images/zfjg_03.png" /></a>
-            <div class="gaba"><a href="#"><img src="images/guohui.png" />川公网安备 51010502010595号</a></div>
-        </div>
-    </div>
 
-    <div class="header  visible-md-block visible-lg-block">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" />
-        </div>
-        <div class="search_from">
-            <input type="text" class="search_input" />
-            <button class="search_btn">
-                <span>全站搜索</span>
-            </button>
-        </div>
-    </div>
+        <!-- 手机时隐藏 -->
+        <div id="menubtn" class="visible-md-block visible-lg-block"></div>
+        <div id="right_abso" class="right_abso visible-md-block visible-lg-block">
+            <ul>
+                <li>
+                    <div class="abso_img"><img src="images/weixin.png" /></div>
+                    <div class="abso_tit">微信公众号</div>
+                </li>
+                <li>
+                    <div class="abso_img"><img src="images/xinglang.png" /></div>
+                    <div class="abso_tit">新浪微博</div>
+                </li>
+                <li>
+                    <div class="abso_img"><img src="images/weibo.png" /></div>
+                    <div class="abso_tit">腾讯微博</div>
+                </li>
+                <li>
+                    <div class="abso_img"><img src="images/youjian2.png" /></div>
+                    <div class="abso_tit">邮件订阅</div>
+                </li>
+                <li>
+                    <div class="abso_img"><img src="images/kefu.png" /></div>
+                    <div class="abso_tit">咨询投诉</div>
+                </li>
+                <li>
+                    <div class="abso_img"><img src="images/shouji.png" /></div>
+                    <div class="abso_tit">移动应用</div>
+                </li>
 
-    <div id="main">
-        <div class="content">
-            <div class="banner"><img src="images/banenr.png" /></div>
-            <div class="clear"></div>
-            <div class="content_m">
-                <div class="content_nav  visible-md-block visible-lg-block">
-                    <ul class="content_nav_ul">
-                        <li class="content_nav_active">
-                            <div class="content_nav_ico"><img src="images/ico7.png" /></div>
-                            <div class="content_nav_tit">网站首页</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico6.png" /></div>
-                            <div class="content_nav_tit">信息公开</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico5.png" /></div>
-                            <div class="content_nav_tit">党的建设</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico2.png" /></div>
-                            <div class="content_nav_tit">办事大厅</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico4.png" /></div>
-                            <div class="content_nav_tit">公共参与</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico3.png" /></div>
-                            <div class="content_nav_tit">专题栏目</div>
-                        </li>
-                        <li>
-                            <div class="content_nav_ico"><img src="images/ico1.png" /></div>
-                            <div class="content_nav_tit">纤检风采</div>
-                        </li>
-                    </ul>
-                    <div class="clear">
+            </ul>
+        </div>
+        <div class="bottom_abso visible-md-block visible-lg-block">
+            <div class="bottom_abso_msg"> <span>主办单位：四川纤维检验局 </span>
+                <span>版权所有：四川省纤维检验局 | Copyright (C) 2005-2016 SCFI. All Rights Reserved. 蜀ICP备18020047号-1</span>
+            </div>
+            <div class="bottom_abso_ico">
+                <a href="#" class="dzjg"><img src="images/dzjg.png" /></a>
+                <a href="#" class="zfjg"><img src="images/zfjg_03.png" /></a>
+                <div class="gaba"><a href="#"><img src="images/guohui.png" />川公网安备 51010502010595号</a></div>
+            </div>
+        </div>
+
+        <!--    顶部菜单 -->
+        <div class="header  visible-md-block visible-lg-block" id="pcheader">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" />
+            </div>
+            <div class="search_from">
+                <input type="text" class="search_input" />
+                <button class="search_btn">
+                    <span>全站搜索</span>
+                </button>
+            </div>
+        </div>
+        <div id="main">
+            <div class="content">
+                <div class="banner"><img src="images/banner.png" /></div>
+                <div class="clear"></div>
+                <div class="content_m">
+                    <div class="content_nav  visible-md-block visible-lg-block">
+                        <ul class="content_nav_ul" id="content_nav_ul">
+                            <li class="content_nav_active" nal="0">
+                                <div class="content_nav_ico"><img src="images/ico7.png" /></div>
+                                <div class="content_nav_tit">网站首页</div>
+                            </li>
+                            <li nal="1">
+                                <div class="content_nav_ico"><img src="images/ico6.png" /></div>
+                                <div class="content_nav_tit">信息公开</div>
+                            </li>
+                            <li nal="2">
+                                <div class="content_nav_ico"><img src="images/ico5.png" /></div>
+                                <div class="content_nav_tit">党的建设</div>
+                            </li>
+                            <li nal="3">
+                                <div class="content_nav_ico"><img src="images/ico2.png" /></div>
+                                <div class="content_nav_tit">办事大厅</div>
+                            </li>
+                            <li nal="4">
+                                <div class="content_nav_ico"><img src="images/ico4.png" /></div>
+                                <div class="content_nav_tit">公共参与</div>
+                            </li>
+                            <li nal="5">
+                                <div class="content_nav_ico"><img src="images/ico3.png" /></div>
+                                <div class="content_nav_tit">专题栏目</div>
+                            </li>
+                            <li nal="6">
+                                <div class="content_nav_ico"><img src="images/ico1.png" /></div>
+                                <div class="content_nav_tit">纤检风采</div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
                         <div class="shaoma">
                             <div class="shaoma_l">政务公众号</div>
                             <div class="shaoma_r">扫码关注</div>
                             <div class="ewm"><img src="images/ewm.png" /></div>
                         </div>
+
                     </div>
+                    <div class="content_right" id="content_right">
+                        <div class="rr_box" lav="0" style="display: block">
+                            <div class="c_r_tit"><img class="visible-md-block visible-lg-block"
+                                    src="images/toutiao.png" /><a href="#">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</a></div>
+                            <div class="c_r_t_last">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6" id="banner_box">
+                                        <div id="banner">
+                                            <div id="banner_bg"></div>
+                                            <div id="banner_info"></div>
+                                            <ul>
+                                                <li class="on" inx="1"></li>
+                                                <li inx="2"></li>
+                                                <li inx="3"></li>
+                                                <li inx="4"></li>
+                                            </ul>
+                                            <div id="banner_list">
+                                                <a href="#" target="_blank"><img src="images/banner1.png"
+                                                        title="jquery插件库1" alt="jquery插件库1" /></a>
+                                                <a href="#" target="_blank"><img src="images/p2.jpg" title="jquery插件库2"
+                                                        alt="jquery插件库2" /></a>
+                                                <a href="#" target="_blank"><img src="images/p3.jpg" title="jquery插件库3"
+                                                        alt="jquery插件库3" /></a>
+                                                <a href="#" target="_blank"><img src="images/p1.jpg" title="jquery插件库4"
+                                                        alt="jquery插件库4" /></a>
+                                            </div>
 
-                </div>
-                <div class="content_right">
-                    <div class="c_r_tit"><img class="visible-md-block visible-lg-block" src="images/toutiao.png" /><a
-                            href="#">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</a></div>
-                    <div class="c_r_t_last">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6" id="banner_box">
-                                <div id="banner">
-                                    <div id="banner_bg"></div>
-                                    <div id="banner_info"></div>
-                                    <ul>
-                                        <li class="on" inx="1"></li>
-                                        <li inx="2"></li>
-                                        <li inx="3"></li>
-                                        <li inx="4"></li>
-                                    </ul>
-                                    <div id="banner_list">
-                                        <a href="#" target="_blank"><img src="images/banner1.png" title="jquery插件库1"
-                                                alt="jquery插件库1" /></a>
-                                        <a href="#" target="_blank"><img src="images/p2.jpg" title="jquery插件库2"
-                                                alt="jquery插件库2" /></a>
-                                        <a href="#" target="_blank"><img src="images/p3.jpg" title="jquery插件库3"
-                                                alt="jquery插件库3" /></a>
-                                        <a href="#" target="_blank"><img src="images/p1.jpg" title="jquery插件库4"
-                                                alt="jquery插件库4" /></a>
+                                        </div>
                                     </div>
+                                    <div class="col-sm-12 col-md-6 news_lists">
+                                        <div
+                                            class="news_list_tab      col-md-12 col-md-1 visible-md-block visible-lg-block">
+                                            <div class="xjyw">
+                                                <div class="xjyx_btn" id="xjyx_btn_active">
+                                                    <div class="xjxx_btn_l"></div>
+                                                    <div class="xjxx_ico"><span
+                                                            class="iconfont icon-toutiaoyaowen"></span>
+                                                    </div>
+                                                    <div class="xjxx_tit">纤检要闻</div>
+                                                    <div class="sanjiao"><img src="images/sanjiao.png" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="gzdt">
+                                                <div class="xjyx_btn ">
+                                                    <div class="xjxx_btn_l"></div>
+                                                    <div class="xjxx_ico"><span
+                                                            class="iconfont icon-gongzuozheng"></span>
+                                                    </div>
+                                                    <div class="xjxx_tit">工作状态</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 新闻列表 -->
+                                        <div class="news_list_content  col-md-12 col-md-11 ">
+                                            <div class="news_content_list">
+                                                <dv class="news_content_list_r">
+                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
+                                                    </div>
+                                                    <div class="news_content_list_r_msg">
+                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
+                                                    </div>
+                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
+                                                    <div class="clear"></div>
+                                                </dv>
+                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
 
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="news_content_list">
+                                                <dv class="news_content_list_r">
+                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
+                                                    </div>
+                                                    <div class="news_content_list_r_msg">
+                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
+                                                    </div>
+                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
+                                                    <div class="clear"></div>
+                                                </dv>
+                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
+
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="news_content_list">
+                                                <dv class="news_content_list_r">
+                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
+                                                    </div>
+                                                    <div class="news_content_list_r_msg">
+                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
+                                                    </div>
+                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
+                                                    <div class="clear"></div>
+                                                </dv>
+                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
+
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 news_lists">
-                                <div class="news_list_tab      col-md-12 col-md-2 visible-md-block visible-lg-block">
-                                    <div class="xjyw">
-                                        <div class="xjyx_btn" id="xjyx_btn_active">
-                                            <div class="xjxx_btn_l"></div>
-                                            <div class="xjxx_ico"><span class="iconfont icon-toutiaoyaowen"></span></div>
-                                            <div class="xjxx_tit">纤检要闻</div>
-                                            <div class="sanjiao"><img src="images/sanjiao.png" /></div>
+                            <div class="c_r_t_sec">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5 c_r_t_sec_l">
+                                        <div class="row  c_r_t_sec_l_row">
+                                            <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
+                                                <div class="c_r_t_sec_l_box_box" id="hyxx">
+                                                    <div class="c_r_t_sec_l_box_box_ico"><img src="images/xyxx.png">
+                                                    </div>
+                                                    <div class="c_r_t_sec_l_box_box_tit">行业信息</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
+                                                <div class="c_r_t_sec_l_box_box" id="xfzn">
+                                                    <div class="c_r_t_sec_l_box_box_ico" id="xfzn_ico"><img
+                                                            src="images/xfzn.png"></div>
+                                                    <div class="c_r_t_sec_l_box_box_tit">消费指南</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
+                                                <div class="c_r_t_sec_l_box_box" id="flfg">
+                                                    <div class="c_r_t_sec_l_box_box_ico" id="flfg_ico"><img
+                                                            src="images/flfg.png"></div>
+                                                    <div class="c_r_t_sec_l_box_box_tit">法律法规</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="gzdt">
-                                        <div class="xjyx_btn ">
-                                            <div class="xjxx_btn_l"></div>
-                                            <div class="xjxx_ico"><span class="iconfont icon-gongzuozheng"></span></div>
-                                            <div class="xjxx_tit">工作状态</div>
+                                    <div class="col-sm-12 col-md-7  c_r_t_sec_r">
+                                        <img class="c_r_t_sec_r_img1" src="images/img1_10.png" />
+                                        <div class="c_r_t_sec_r_div">
+                                            <ul>
+                                                <li><img src="images/weizhi.png" /><span>四川省成都市青羊区少城路7号 </span></li>
+                                                <li><img src="images/youjian.png" /><span>邮编：610015 </span></li>
+                                                <li><img src="images/dianhua.png" /><span>028-86631385（检测中心-接样受理）
+                                                    </span>
+                                                </li>
+                                                <li><img src="images/dianhua.png" /><span>028-86639111 （办公室） </span>
+                                                </li>
+                                            </ul>
                                         </div>
+                                        <img class="c_r_t_sec_r_img2" src="images/img2_12.png" />
                                     </div>
-                                </div>
-                                <!-- 新闻列表 -->
-                                <div class="news_list_content  col-md-12 col-md-10 ">
-                                    <div class="news_content_list">
-                                        <dv class="news_content_list_r">
-                                            <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</div>
-                                            <div class="news_content_list_r_msg">
-                                                近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                            </div>
-                                            <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                            <div class="clear"></div>
-                                        </dv>
-                                        <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="news_content_list">
-                                        <dv class="news_content_list_r">
-                                            <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</div>
-                                            <div class="news_content_list_r_msg">
-                                                近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                            </div>
-                                            <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                            <div class="clear"></div>
-                                        </dv>
-                                        <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="news_content_list">
-                                        <dv class="news_content_list_r">
-                                            <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</div>
-                                            <div class="news_content_list_r_msg">
-                                                近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                            </div>
-                                            <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                            <div class="clear"></div>
-                                        </dv>
-                                        <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                    </div>
-                                    <div class="clear"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="c_r_t_sec">
-                        <div class="row" >
-                            <div class="col-sm-12 col-md-5 c_r_t_sec_l">
-                                <div class="row  c_r_t_sec_l_row">
-                                    <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
-                                        <div class="c_r_t_sec_l_box_box" id="hyxx">
-                                            <div class="c_r_t_sec_l_box_box_ico"><img src="images/xyxx.png"></div>
-                                            <div class="c_r_t_sec_l_box_box_tit">行业信息</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
-                                        <div class="c_r_t_sec_l_box_box" id="xfzn">
-                                            <div class="c_r_t_sec_l_box_box_ico" id="xfzn_ico"><img
-                                                    src="images/xfzn.png"></div>
-                                            <div class="c_r_t_sec_l_box_box_tit">消费指南</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
-                                        <div class="c_r_t_sec_l_box_box" id="flfg">
-                                            <div class="c_r_t_sec_l_box_box_ico" id="flfg_ico"><img
-                                                    src="images/flfg.png"></div>
-                                            <div class="c_r_t_sec_l_box_box_tit">法律法规</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-7  c_r_t_sec_r">
-                                <img class="c_r_t_sec_r_img1" src="images/img1_10.png" />
-                                <div class="c_r_t_sec_r_div">
-                                    <ul>
-                                        <li><img src="images/weizhi.png"/><span>四川省成都市青羊区少城路7号 </span></li>
-                                        <li><img src="images/youjian.png"/><span>邮编：610015 </span></li>
-                                        <li><img src="images/dianhua.png"/><span>028-86631385（检测中心-接样受理） </span></li>
-                                        <li><img src="images/dianhua.png"/><span>028-86639111 （办公室） </span></li>
+                        <div class="rr_box" lav="1">
+                            信息公开
+                        </div>
+                        <div class="rr_box" lav="2">
+                            <div id="content_r_banner">
+                                <div class="dangdejianshe visible-md-block visible-lg-block"><img
+                                        src="images/dangdejianshe.png" /></div>
+                                <div class="scroll">
+                                    <ul id="scroll_ul">
+                                        <li><img src="images/banner1.png"></li>
+                                        <li><img src="images/p1.jpg"></li>
+                                        <li><img src="images/p2.jpg"></li>
                                     </ul>
+                                    <a href="#" class="prev"></a>
+                                    <a href="#" class="next"></a>
+
                                 </div>
-                                <img class="c_r_t_sec_r_img2" src="images/img2_12.png" />
+                                <div class="dwjj_box">
+                                    <div class="dwjj">
+                                        <span>党委简介</span>
+                                        <a href="#">更多→</a>
+                                    </div>
+                                    <div class="dwjj_msg">
+                                        <p>中共福建医科大学附属口腔医院委员会成立于2006年9月，现任党委书记陈江，副书记黄朝新。现下设牙体牙髓支部、儿牙医技支部、种植外科支部、修复工艺支部、口腔特诊支部、护理部党支部、行政第一党支部、行政第二党支部、退休党支部等9个党支部，教职工党员共计109名。
+                                        </p>
+                                        <p>
+                                            院党委在校党委和卫计委党组的正确领导下，高举习近平新时代中国特色社会主义思想伟大旗帜，紧紧围绕学习贯彻党的十九大精神这条主线，深入贯彻习近平总书记对福建工作的重要指示，认真学习领会省第十次党代会和省委十届二次、三次、四次、五次全会精神，紧紧围绕医院的中心工作，抓好党的建设，积极推进医院改革与发展，努力开创党建和思想政治工作新局面。
+                                        </p>
+                                        <p>
+                                            院党委在校党委和卫计委党组的正确领导下，高举习近平新时代中国特色社会主义思想伟大旗帜，紧紧围绕学习贯彻党的十九大精神这条主线，深入贯彻习近平总书记对福建工作的重要指示，认真学习领会省第十次党代会和省委十届二次、三次、四次、五次全会精神，紧紧围绕医院的中心工作，抓好党的建设，积极推进医院改革与发展，努力开创党建和思想政治工作新局面。
+                                        </p>
+                                    </div>
+                                    <div class="last_lm">
+                                        <div class="dwjj_menu">
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                        </div>
+                                    </div>
+                                    <div class="last_lm2">
+                                        <div class="dwjj_menu">
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                        </div>
+                                        <div class="dwjj_menu">
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                            <div class="dwjj_menu_box">教工一支部</div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                            <div class="clear"></div>
+                            <div class="last_xwlist">
+                                <div class="xw_list">
+                                    <div class="xw_list_header">
+                                        <div class="xw_list_tit">时政要闻</div>
+                                        <a href="#">更多 ></a>
+                                    </div>
+                                    <div class="xw_lists_ul">
+                                        <ul>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xw_list">
+                                    <div class="xw_list_header">
+                                        <div class="xw_list_tit">时政要闻</div>
+                                        <a href="#">更多 ></a>
+                                    </div>
+                                    <div class="xw_lists_ul">
+                                        <ul>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xw_list">
+                                    <div class="xw_list_header">
+                                        <div class="xw_list_tit">时政要闻</div>
+                                        <a href="#">更多 ></a>
+                                    </div>
+                                    <div class="xw_lists_ul">
+                                        <ul>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                            <li><a href="#">省机关事务管理组织退休老同省机关事务管理组织退休老同省机关事务管理组织退休老同</a><span>5-28</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xw_img visible-md-block visible-lg-block"><img src="images/fuping_03.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rr_box" lav="3">
+                            办事大厅
+                        </div>
+                        <div class="rr_box" lav="4">
+                            公共参与
+                        </div>
+                        <div class="rr_box" lav="5">
+                            专题栏目
+                        </div>
+                        <div class="rr_box" lav="6">
+                            纤检风采
                         </div>
                     </div>
                 </div>
+
+
             </div>
-     </div>
+        </div>
 
-
-     <div class="bottom_mobile visible-xs-block visible-sm-block ">
-          <span>主办单位：四川纤维检验局 </span>
-          <span>版权所有：四川省纤维检验局 </span>
-          <span>Copyright (C) 2005-2016 SCFI. All Rights Reserved. 蜀ICP备18020047号-1</span>
     </div>
-
-</div>
-
-
 </body>
 <script>
 
@@ -313,5 +462,86 @@
 </script>
 <script src="js/ini.js"></script>
 <script src="js/index.js"></script>
+<script>
+    (() => {
+        //菜单切换
+        let bq = ` <div class="bottom_mobile visible-xs-block visible-sm-block ">
+                                <span>主办单位：四川纤维检验局 </span>
+                                <span>版权所有：四川省纤维检验局 </span>
+                                <span>Copyright (C) 2005-2016 SCFI. All Rights Reserved. 蜀ICP备18020047号-1</span>
+                         </div>`;
+        $("[lav=0]").append($(bq));
+        $("#content_nav_ul > li").on("click", function () {
+            $("#content_nav_ul > li").removeClass("content_nav_active");
+            $(this).addClass("content_nav_active");
+            var nal = $(this).attr("nal")
+            $(".rr_box").not($("[lav" + "=" + nal + "]")).css("display", "none");
+            $("[lav" + "=" + nal + "]").css({
+                "display":"block",
+                "opacity":"0",
+            }).animate({
+                "opacity":"1"
+            },400);
+            //设置版权信息
+            $("[lav]").find(".bottom_mobile").remove();
+            $("[lav" + "=" + nal + "]").append($(bq));
+        });
+    })()
+
+</script>
+<script>
+    //兼容各种浏览器
+    $(function () {
+        $("#scroll_ul li").css({
+            width: $("#content_r_banner").width() + "px",
+            height: $("#content_r_banner").height() + "px",
+        });
+        var w = $("#content_r_banner").width();
+
+        var l = 0;
+
+        var timer = null;
+
+        var len = $("#scroll_ul li").length * 2;
+        $("#scroll_ul").append($("#scroll_ul").html()).css({ 'width': len * w, 'left': -len * w / 2 });
+        timer = setInterval(init, 2000);
+        function init() {
+            $(".scroll .next").trigger('click'); //当页面一加载就触发next按钮的点击事件，用trigger的好处是减少重复代码,如果不用，就要把按钮click事件里代码全部复制过来，因为加载的代码和点击next按钮代码和效果相同，所以就用trigger触发执行click里面代码。
+        }
+        $("#scroll_ul li").hover(function () {
+            clearInterval(timer);
+        }, function () {
+            timer = setInterval(init, 8000);
+        });
+        $(".prev").click(function () {
+            l = parseInt($("#scroll_ul").css("left")) + w;  //这里要转成整数，因为后面带了px单位
+            showCurrent(l);
+        });
+        $(".next").click(function () {
+            l = parseInt($("#scroll_ul").css("left")) - w;  //这里要转成整数，因为后面带了px单位
+            showCurrent(l);
+        });
+        function showCurrent(l) {     //把图片的左右切换封装成一个函数
+            if ($("#scroll_ul").is(':animated')) { //当ul正在执行动画的过程中，阻止执行其它动作。关键之处，不然图片切换显示不完全，到最后图片空白不显示。
+                return;
+            }
+            $("#scroll_ul").animate({ "left": l }, 500, function () {
+                if (l == 0) { //当图片位置到第一份图片第二张时，马上把图片定位到第二份的第一张。注意这里的设置的css一定到写在animate动画完成时的执行  //函数里。否则图片只是一瞬间回到第一张，但是没有向右的动画效果。 我在做的时候，用的不是css,而是用animate()定位到第二个第一张，结果切换时，是反方向的运动，一直觉得无论怎样，图片方向都会发生变化 ，弄得花了一天时间才找到原因，所以一定 要用css。
+                    $("#scroll_ul").css("left", -len * w / 2);
+                } else if (l == (1 - len) * w) { //图片位置到最后一张时（第二份最后一张）时，就把图片定位到第一份最后一张。从而显示的是第一份最后一张。
+
+                    $("#scroll_ul").css('left', (1 - len / 2) * w);
+
+                }
+
+            });
+
+        }
+
+
+
+    });
+
+</script>
 
 </html>

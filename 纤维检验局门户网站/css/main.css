@@ -1,3 +1,5 @@
+
+/* 顶部、右侧、底部元素 */
 @media screen and (min-width: 992px){
     .header{
         position: relative;
@@ -5,9 +7,9 @@
         margin: 0 auto;
     }
     .logo{
-        width: 20%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        width: 17%;
+        padding-top: 15px;
+        padding-bottom: 25px;
     }
     .logo img{
         width:100%;
@@ -143,18 +145,17 @@
         color: white
     }
 }
+
+
 @media screen and (max-width: 992px) {
     /* 手机端CSS代码 */
     .content {
         width: 100%;
-        max-width: 1500px;
-        background: red;
         margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 992px) {
-
     /* 电脑端CSS代码 */
     .content {
         width: calc(100% - 100px);
@@ -163,10 +164,18 @@
     }
 }
 
-.banner,
-.banner img {
+.banner {
+    position: relative;
     width: 100%;
+    height: 100px;
+    overflow: hidden;
 }
+.banner img{
+    position: absolute;
+    left: 50%;
+    margin-left: -1280px;
+}
+
 
 .content_m {
     width: 100%;
@@ -191,8 +200,15 @@
 }
 
 .content_right {
+    position: relative;
     flex: 1;
-    background: white
+    background: white;
+}
+.rr_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
 .content_nav_ul {
@@ -205,15 +221,16 @@
     position: relative;
     float: left;
     width: 100%;
-    height: 0.8rem;
-    min-height: 60px;
-    max-height: 90px;
+    height:0.67rem;
+    max-height: 70px;
+    min-height: 50px;
     cursor: pointer;
-    border-bottom: 1px solid #2c5c98;
+    border-bottom: 1px solid #2f5f9c;
+    text-indent: 20px;
 }
 
 .content_nav ul li:hover {
-    background: #103c75f5;
+    background: #11468b;
 }
 
 .content_nav_tit {
@@ -224,6 +241,7 @@
     top: 50%;
     left: 70px;
     margin-top: -8px;
+    line-height: 1;
 }
 .content_nav_ico{
     position: absolute;
@@ -246,12 +264,13 @@
     width: 100%;
     position: relative;
     padding-top: 4px;
+
 }
 
 .ewm {
     width: 93px;
     height: 93px;
-    margin: 3px 53px 13px 53px;
+    margin: 30px 3px 23px 53px;
 }
 
 .ewm img {
@@ -266,7 +285,7 @@
     left: 30px;
     line-height: 16px;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -25px;
 }
 .shaoma_r{
     position: absolute;
@@ -276,9 +295,10 @@
     right: 30px;
     line-height: 20px;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -25px;
 }
 .bottom_mobile{
+    height: 130px;
     margin-top: 30px;
     background: rgb(231, 231, 231);
     padding-top:10px;
@@ -287,7 +307,6 @@
     font-size: 12px;
     color:rgb(119, 116, 116);
 }
-
 .bottom_mobile span{
     display: block
 }

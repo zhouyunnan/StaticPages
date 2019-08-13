@@ -16,6 +16,10 @@
             $(".c_r_t_sec > .row").css({
                "height": ($(".content_right").height() - $(".c_r_tit").height() - $(".c_r_t_last").height() - 10) + "px"
             });
+
+            //设置main高度
+            var main_height = $(window).height() - 60 - $("#pcheader").height() - 20;
+            $("#main").css("height",main_height);
         } else {
             $(".news_lists").css({
                 "height": "auto"
@@ -31,13 +35,18 @@
                 "width": $("#banner").width() + "px",
                 "height": $("#banner_box").height() + "px",
             });
+                //设置main高度
+                var main_height = $(window).height();
+                $("#main").css("height",main_height);
         }
+
+    
     }
     be();
     $(window).resize(function () {
         be();
     });
-
+    
     
 
 

@@ -1,5 +1,7 @@
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-body{font:12px"宋体";-webkit-text-size-adjust:100%;}
+body{
+  font-family:"Microsoft YaHei","微软雅黑","宋体","Helvetica Neue","Lucida Grande","Verdana","Helvetica","Georgia","Tahoma","Arial";
+}
 a{color:#2d374b;text-decoration:none}
 a:hover{color:#cd0200;}
 em{font-style:normal}
@@ -15,11 +17,13 @@ html,body{padding: 0px;margin: 0px;}
   @media screen and (max-width: 992px){
     /* 手机端CSS代码 */
     html,body{
-      overflow-x: hidden;
+      overflow:hidden;
     }
     #main{
       margin-top: 45px;
-  }
+      overflow-y: auto;
+      overflow-x:hidden;
+    }
   }
   @media screen and (min-width: 992px){
     /* 电脑端CSS代码 */ 
@@ -31,14 +35,15 @@ html,body{padding: 0px;margin: 0px;}
         background:url("../images/body_bj.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        overflow-y: auto;
+        overflow-y:hidden;
       }
     #main{
+        position: absolute;
         width: calc(100% - 60px);
-        max-width: 1860px;
         min-width: 1306px;
         margin: 0 auto;
-        padding-bottom: 100px;
+        overflow: hidden;
+        overflow-y: auto;
     }
   }
   #APP{
