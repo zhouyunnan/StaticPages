@@ -3,7 +3,7 @@ body{
   font-family:"Microsoft YaHei","微软雅黑","宋体","Helvetica Neue","Lucida Grande","Verdana","Helvetica","Georgia","Tahoma","Arial";
 }
 a{color:#2d374b;text-decoration:none}
-a:hover{color:#cd0200;}
+a:hover{color:#cd0200;text-decoration: none}
 em{font-style:normal}
 li{list-style:none}
 img{border:0;vertical-align:middle}
@@ -38,8 +38,8 @@ html,body{padding: 0px;margin: 0px;}
         overflow-y:hidden;
       }
     #main{
-        position: absolute;
-        width: calc(100% - 60px);
+        width: calc(100% - 160px);
+        max-width: 1700px;
         min-width: 1306px;
         margin: 0 auto;
         overflow: hidden;

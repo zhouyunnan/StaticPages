@@ -24,6 +24,10 @@
 
 <body>
     <div id="APP">
+        <!-- 手机页面弹出层 -->
+        <div id="sec_page_pc">
+                <div class="guanbi_sec" guanbi_sec_btn ><span class="iconfont icon-guanbi"></span></div>
+        </div>
         <!-- 手机顶部菜单 -->
         <div id="mobile_header" class="visible-xs-block visible-sm-block ">
             <div class="m_menubtn" id="m_menubtn"></div>
@@ -33,32 +37,32 @@
             </div>
         </div>
         <div id="mobile_nav_box" zt="0" class="visible-xs-block visible-sm-block ">
-            <ul class="m_content_nav_ul">
-                <li>
+            <ul class="m_content_nav_ul" m_nav="mobile">
+                <li nal="0">
                     <div class="m_content_nav_ico"><img src="images/ico7.png" /></div>
                     <div class="m_content_nav_tit">网站首页</div>
                 </li>
-                <li>
+                <li nal="1">
                     <div class="m_content_nav_ico"><img src="images/ico6.png" /></div>
                     <div class="m_content_nav_tit">信息公开</div>
                 </li>
-                <li id="m_left_nav">
+                <li nal="2">
                     <div class="m_content_nav_ico"><img src="images/ico5.png" /></div>
                     <div class="m_content_nav_tit">党的建设</div>
                 </li>
-                <li>
+                <li nal="3">
                     <div class="m_content_nav_ico"><img src="images/ico2.png" /></div>
                     <div class="m_content_nav_tit">办事大厅</div>
                 </li>
-                <li>
+                <li nal="4">
                     <div class="m_content_nav_ico"><img src="images/ico4.png" /></div>
                     <div class="m_content_nav_tit">公共参与</div>
                 </li>
-                <li>
+                <li nal="5">
                     <div class="m_content_nav_ico"><img src="images/ico3.png" /></div>
                     <div class="m_content_nav_tit">专题栏目</div>
                 </li>
-                <li>
+                <li nal="6">
                     <div class="m_content_nav_ico"><img src="images/ico1.png" /></div>
                     <div class="m_content_nav_tit">纤检风采</div>
                 </li>
@@ -125,7 +129,7 @@
                 <div class="clear"></div>
                 <div class="content_m">
                     <div class="content_nav  visible-md-block visible-lg-block">
-                        <ul class="content_nav_ul" id="content_nav_ul">
+                        <ul class="content_nav_ul" m_nav="pc" id="content_nav_ul">
                             <li class="content_nav_active" nal="0">
                                 <div class="content_nav_ico"><img src="images/ico7.png" /></div>
                                 <div class="content_nav_tit">网站首页</div>
@@ -166,7 +170,7 @@
                     <div class="content_right" id="content_right">
                         <div class="rr_box" lav="0" style="display: block">
                             <div class="c_r_tit"><img class="visible-md-block visible-lg-block"
-                                    src="images/toutiao.png" /><a href="#">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</a></div>
+                                    src="images/toutiao.png" /><a href="javascript:void(0)" sec_page >工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动</a></div>
                             <div class="c_r_t_last">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6" id="banner_box">
@@ -196,17 +200,17 @@
                                         <div
                                             class="news_list_tab      col-md-12 col-md-1 visible-md-block visible-lg-block">
                                             <div class="xjyw">
-                                                <div class="xjyx_btn" id="xjyx_btn_active">
+                                                <div class="xjyx_btn">
                                                     <div class="xjxx_btn_l"></div>
                                                     <div class="xjxx_ico"><span
                                                             class="iconfont icon-toutiaoyaowen"></span>
                                                     </div>
                                                     <div class="xjxx_tit">纤检要闻</div>
-                                                    <div class="sanjiao"><img src="images/sanjiao.png" /></div>
+
                                                 </div>
                                             </div>
                                             <div class="gzdt">
-                                                <div class="xjyx_btn ">
+                                                <div class="xjyx_btn" >
                                                     <div class="xjxx_btn_l"></div>
                                                     <div class="xjxx_ico"><span
                                                             class="iconfont icon-gongzuozheng"></span>
@@ -216,49 +220,8 @@
                                             </div>
                                         </div>
                                         <!-- 新闻列表 -->
-                                        <div class="news_list_content  col-md-12 col-md-11 ">
-                                            <div class="news_content_list">
-                                                <dv class="news_content_list_r">
-                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
-                                                    </div>
-                                                    <div class="news_content_list_r_msg">
-                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                                    </div>
-                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                                    <div class="clear"></div>
-                                                </dv>
-                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div class="news_content_list">
-                                                <dv class="news_content_list_r">
-                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
-                                                    </div>
-                                                    <div class="news_content_list_r_msg">
-                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                                    </div>
-                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                                    <div class="clear"></div>
-                                                </dv>
-                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div class="news_content_list">
-                                                <dv class="news_content_list_r">
-                                                    <div class="news_content_list_r_tit">工会第二小组开展“徒步康道舒身心 健康生活走起来”主题登山活动
-                                                    </div>
-                                                    <div class="news_content_list_r_msg">
-                                                        近日，为丰富会员的业余文化生活，倡导绿色、健康的生活方式，在局工会的关心指导下，工会第二小组开展了“徒步康道舒身心健康生活走起来”主题登山活动。
-                                                    </div>
-                                                    <div class="xiangxi  visible-md-block visible-lg-block">[ 详细 ]</div>
-                                                    <div class="clear"></div>
-                                                </dv>
-                                                <div class="xwimg"><img src="images/xwimg_05.png" /></div>
-
-                                            </div>
-                                            <div class="clear"></div>
+                                        <div class="news_list_content  col-md-12 col-md-11 " id="xxk_content">
+                                                  
                                         </div>
                                     </div>
                                 </div>
@@ -268,11 +231,13 @@
                                     <div class="col-sm-12 col-md-5 c_r_t_sec_l">
                                         <div class="row  c_r_t_sec_l_row">
                                             <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
-                                                <div class="c_r_t_sec_l_box_box" id="hyxx">
-                                                    <div class="c_r_t_sec_l_box_box_ico"><img src="images/xyxx.png">
-                                                    </div>
-                                                    <div class="c_r_t_sec_l_box_box_tit">行业信息</div>
-                                                </div>
+                                              <a href="#">
+                                                    <div class="c_r_t_sec_l_box_box" id="hyxx" sec_page >
+                                                            <div class="c_r_t_sec_l_box_box_ico"><img src="images/xyxx.png">
+                                                            </div>
+                                                            <div class="c_r_t_sec_l_box_box_tit">行业信息</div>
+                                                        </div>
+                                              </a>
                                             </div>
                                             <div class="col-xs-4  col-md-4 col-log-4 c_r_t_sec_l_box ">
                                                 <div class="c_r_t_sec_l_box_box" id="xfzn">
@@ -447,6 +412,12 @@
                         <div class="rr_box" lav="6">
                             纤检风采
                         </div>
+                        <div id="sec_page">
+                            <div class="guanbi_sec" guanbi_sec_btn ><span class="iconfont icon-guanbi"></span></div>
+                            <div class="sec_page_box">
+                                   
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -463,6 +434,59 @@
 <script src="js/ini.js"></script>
 <script src="js/index.js"></script>
 <script>
+    //党的建设轮播
+    let ddjs = {
+        zt: true,
+        fn: function () {
+            $("#scroll_ul li").css({
+                width: $("#content_r_banner").width() + "px",
+                height: $("#content_r_banner").height() + "px",
+            });
+            var w = $("#content_r_banner").width();
+
+            var l = 0;
+
+            var timer = null;
+
+            var len = $("#scroll_ul li").length * 2;
+            $("#scroll_ul").append($("#scroll_ul").html()).css({ 'width': len * w, 'left': -len * w / 2 });
+            timer = setInterval(init, 2000);
+            function init() {
+                $(".scroll .next").trigger('click'); //当页面一加载就触发next按钮的点击事件，用trigger的好处是减少重复代码,如果不用，就要把按钮click事件里代码全部复制过来，因为加载的代码和点击next按钮代码和效果相同，所以就用trigger触发执行click里面代码。
+            }
+            $("#scroll_ul li").hover(function () {
+                clearInterval(timer);
+            }, function () {
+                timer = setInterval(init, 2000);
+            });
+            $(".prev").click(function () {
+                l = parseInt($("#scroll_ul").css("left")) + w;  //这里要转成整数，因为后面带了px单位
+                showCurrent(l);
+            });
+            $(".next").click(function () {
+                l = parseInt($("#scroll_ul").css("left")) - w;  //这里要转成整数，因为后面带了px单位
+                showCurrent(l);
+            });
+            function showCurrent(l) {     //把图片的左右切换封装成一个函数
+                if ($("#scroll_ul").is(':animated')) { //当ul正在执行动画的过程中，阻止执行其它动作。关键之处，不然图片切换显示不完全，到最后图片空白不显示。
+                    return;
+                }
+                $("#scroll_ul").animate({ "left": l }, 500, function () {
+                    if (l == 0) { //当图片位置到第一份图片第二张时，马上把图片定位到第二份的第一张。注意这里的设置的css一定到写在animate动画完成时的执行  //函数里。否则图片只是一瞬间回到第一张，但是没有向右的动画效果。 我在做的时候，用的不是css,而是用animate()定位到第二个第一张，结果切换时，是反方向的运动，一直觉得无论怎样，图片方向都会发生变化 ，弄得花了一天时间才找到原因，所以一定 要用css。
+                        $("#scroll_ul").css("left", -len * w / 2);
+                    } else if (l == (1 - len) * w) { //图片位置到最后一张时（第二份最后一张）时，就把图片定位到第一份最后一张。从而显示的是第一份最后一张。
+
+                        $("#scroll_ul").css('left', (1 - len / 2) * w);
+
+                    }
+
+                });
+
+            }
+
+
+        }
+    };
     (() => {
         //菜单切换
         let bq = ` <div class="bottom_mobile visible-xs-block visible-sm-block ">
@@ -471,76 +495,41 @@
                                 <span>Copyright (C) 2005-2016 SCFI. All Rights Reserved. 蜀ICP备18020047号-1</span>
                          </div>`;
         $("[lav=0]").append($(bq));
-        $("#content_nav_ul > li").on("click", function () {
-            $("#content_nav_ul > li").removeClass("content_nav_active");
+
+
+        $("[m_nav] > li").on("click", function () {
+            $("[m_nav] > li").removeClass("content_nav_active");
             $(this).addClass("content_nav_active");
             var nal = $(this).attr("nal")
             $(".rr_box").not($("[lav" + "=" + nal + "]")).css("display", "none");
+
+
             $("[lav" + "=" + nal + "]").css({
-                "display":"block",
-                "opacity":"0",
+                "display": "block",
+                "opacity": "0",
             }).animate({
-                "opacity":"1"
-            },400);
+                "opacity": "1"
+            }, 400);
             //设置版权信息
             $("[lav]").find(".bottom_mobile").remove();
             $("[lav" + "=" + nal + "]").append($(bq));
+            //党的建设单独处理
+            if (nal == 2) {
+                if (ddjs.zt) {
+                    ddjs.fn();
+                    ddjs.zt = false;
+                }
+            }
+
+
+
+
         });
     })()
 
 </script>
 <script>
-    //兼容各种浏览器
-    $(function () {
-        $("#scroll_ul li").css({
-            width: $("#content_r_banner").width() + "px",
-            height: $("#content_r_banner").height() + "px",
-        });
-        var w = $("#content_r_banner").width();
 
-        var l = 0;
-
-        var timer = null;
-
-        var len = $("#scroll_ul li").length * 2;
-        $("#scroll_ul").append($("#scroll_ul").html()).css({ 'width': len * w, 'left': -len * w / 2 });
-        timer = setInterval(init, 2000);
-        function init() {
-            $(".scroll .next").trigger('click'); //当页面一加载就触发next按钮的点击事件，用trigger的好处是减少重复代码,如果不用，就要把按钮click事件里代码全部复制过来，因为加载的代码和点击next按钮代码和效果相同，所以就用trigger触发执行click里面代码。
-        }
-        $("#scroll_ul li").hover(function () {
-            clearInterval(timer);
-        }, function () {
-            timer = setInterval(init, 8000);
-        });
-        $(".prev").click(function () {
-            l = parseInt($("#scroll_ul").css("left")) + w;  //这里要转成整数，因为后面带了px单位
-            showCurrent(l);
-        });
-        $(".next").click(function () {
-            l = parseInt($("#scroll_ul").css("left")) - w;  //这里要转成整数，因为后面带了px单位
-            showCurrent(l);
-        });
-        function showCurrent(l) {     //把图片的左右切换封装成一个函数
-            if ($("#scroll_ul").is(':animated')) { //当ul正在执行动画的过程中，阻止执行其它动作。关键之处，不然图片切换显示不完全，到最后图片空白不显示。
-                return;
-            }
-            $("#scroll_ul").animate({ "left": l }, 500, function () {
-                if (l == 0) { //当图片位置到第一份图片第二张时，马上把图片定位到第二份的第一张。注意这里的设置的css一定到写在animate动画完成时的执行  //函数里。否则图片只是一瞬间回到第一张，但是没有向右的动画效果。 我在做的时候，用的不是css,而是用animate()定位到第二个第一张，结果切换时，是反方向的运动，一直觉得无论怎样，图片方向都会发生变化 ，弄得花了一天时间才找到原因，所以一定 要用css。
-                    $("#scroll_ul").css("left", -len * w / 2);
-                } else if (l == (1 - len) * w) { //图片位置到最后一张时（第二份最后一张）时，就把图片定位到第一份最后一张。从而显示的是第一份最后一张。
-
-                    $("#scroll_ul").css('left', (1 - len / 2) * w);
-
-                }
-
-            });
-
-        }
-
-
-
-    });
 
 </script>
 

@@ -87,7 +87,7 @@
     height: 30px;
     filter: Alpha(Opacity=60);
     opacity: 0.6;
-    z-index: 1000;
+    z-index:90;
     cursor: pointer;
     width: 100%;
 }
@@ -99,14 +99,14 @@
     height: 30px;
     line-height: 30px;
     color: #fff;
-    z-index: 1001;
+    z-index:91;
     cursor: pointer
 }
 
 #banner_text {
     position: absolute;
     width: 120px;
-    z-index: 1002;
+    z-index:92;
     right: 3px;
     bottom: 3px;
 }
@@ -120,7 +120,7 @@
     list-style-type: none;
     filter: Alpha(Opacity=80);
     opacity: 0.8;
-    z-index: 1002;
+    z-index:93;
     margin: 0;
     padding: 0;
     bottom: 10px;
@@ -233,6 +233,8 @@
         border-bottom: 1px dashed #e1e1e1;
         padding-bottom: 10px;
         padding-top: 10px;
+        height: auto;
+        overflow-y: hidden;
     }
 }
 
@@ -321,13 +323,13 @@
 .c_r_t_sec_l_box {
     height: 100%;
 }
-
 .c_r_t_sec_l_box_box {
     width: 96%;
     height: calc(90% - 20px);
     border: 1px solid #d3d1d1;
     margin: 0 auto;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .c_r_t_sec_l_row {
