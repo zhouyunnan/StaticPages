@@ -1,0 +1,196 @@
+/* 手机页面 */
+@media screen and (max-width: 992px) {
+    .xjfc_top {
+        width: 100%;
+	}
+	.xjfc_top_right {
+		background-color: rgba(250, 246, 246, 0.76);
+	}
+
+	.xjfc_right_tit {
+		margin-top: 5%;
+		text-align: center;
+		width: 100%;
+		font-size: 24px;
+		font-weight: bold;
+		color: #bc1234;
+	}
+	.xjfc_bottom_li_box{
+        position: relative;
+        width: 100%;
+		margin: 0 auto;
+		margin-top: 10px;
+		padding-bottom:20px;
+		padding-top: 20px;
+
+    }
+	.xjfc_li_tit{
+		position: absolute;
+		left: 50%;
+		margin-left: -26px;
+	}
+	.xjfc_right_subs {
+		font-size: 14px;
+	}
+
+	.xjfc_right_subs p {
+		margin: 10px;
+	}
+
+	.xjfc_right_more {
+		width: 100%;
+		font-size: 14px;
+		text-align: center;
+		color: white;
+		line-height: 30px;
+	}
+
+	.xjfc_bottom {
+		margin: 0;
+		margin-top: 20px;
+		background: #f2f2f2;
+		font-size: 16px;
+	}
+
+	.xjfc_bottom_li {
+		flex: 1;
+		width: 100%;
+		;background: white;
+	}
+
+	.xjfc_li_im {
+		text-align: center;
+		margin-top: 5%;
+		width: 100%;
+	}
+
+	.xjfc_li_im img {
+		margin-top: 10px;
+	}
+
+	.xjfc_li_txt {
+		padding-top: 10px;
+		text-align: center;
+		overflow: hidden;
+		margin: 0 auto;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.xjfc_more_txt{
+		margin-top: 20px;
+		width: 100px;
+		margin: 0 auto;
+		background: #bc1234;
+	}
+}
+/* pc页面 */
+@media screen and (min-width: 992px) {
+	.xjfc_top {
+        width: 100%;
+		height: 60%;
+		margin: 20px;
+		background: url("../images/xjfc/images/xjfc_bg_03.jpg");
+		background-size: 100% 100%;
+	}
+	.xjfc_top_right {
+        width: 30%;
+        float: right;
+		height: 100%;
+        background-color: rgba(250, 246, 246, 0.76);
+        margin-right: 10%;
+	}
+
+
+	.xjfc_top_left {
+        float:right;
+        width: 600px;
+        height: 100%;
+    }
+
+	.xjfc_right_tit {
+		text-align: center;
+		width: 100%;
+		font-size: 20px;
+		font-weight: bold;
+        color: #bb231c;
+        margin-top: 20px;
+	}
+
+	.xjfc_right_subs {
+		padding-left: 6%;
+		font-size: 16px;
+		margin-top: 5%;
+		height: 58%;
+	}
+
+	.xjfc_right_subs p {
+		height: 15%;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.xjfc_right_more {
+		float: right;
+		margin-right: 5%;
+		width: 25%;
+		height: 13%;
+		font-size: 16px;
+		text-align: center;
+		background: #bc1234;
+		color: white;
+	}
+
+	.xjfc_more_txt {
+		margin-top: 10%;
+	}
+
+	.xjfc_bottom {
+        width: calc(100% - 40px);
+        height: 33%;
+		display: flex;
+		margin: 0 auto;
+		background: #f2f2f2;
+        font-size: 14px;
+        margin: 0 auto;
+	}
+
+	.xjfc_bottom_li {
+		flex: 1;
+	}
+    .xjfc_bottom_li_box{
+        position: relative;
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+    }
+    .xjfc_li_tit{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+		z-index: 2;
+		top: 10px;
+    }
+    .xjfc_li_im{
+        position: absolute;
+        z-index: 1;
+		height: 100%;
+		top: 20px;
+		width: 80%;
+		left: 50%;
+		transform: translateX(-50%)
+	}
+    .xjfc_li_im img{
+		width: 100%;
+    }
+    .xjfc_li_txt{
+        position: absolute;
+        text-align: center;
+        bottom: -40px;
+        height: 25px;
+        width: 80%;
+        background: white;
+        line-height: 25px;
+		left: 50%;
+		transform: translateX(-50%)
+    }
+}
