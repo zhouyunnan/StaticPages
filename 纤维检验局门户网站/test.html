@@ -1,0 +1,32 @@
+<html>
+
+        <meta charset="UTF-8">
+</html>
+<style>
+    #tea{
+        width: 500px;
+        height: 300px;
+    }
+</style>
+<script src="js/jquery-1.8.0.js"></script>
+<textarea id="tea">
+
+</textarea>
+<button id="btn"> 转换</button>
+
+<div id="box">
+
+</div>
+<script>
+
+$("#btn").on("click",function(){
+    var str = $("#tea").val();
+    var reg = /[\r\n\f\v]/g;
+    console.log(str);
+    var reg1 = "\.";
+    var newstr = str.replace(reg,"").replace(/}\./g,"}<br/>.").replace(/@/g,"<br/>@").replace(/#/g,"<br/>#");
+    $("#box").html(newstr);
+});
+
+
+</script>
