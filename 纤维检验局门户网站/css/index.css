@@ -254,7 +254,7 @@
 
 .news_content_list_r_tit {
     color: #393838;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     cursor: pointer;
     overflow: hidden;
@@ -270,7 +270,7 @@
 
 .news_content_list_r_msg {
     color: #888484;
-    font-size: 12px;
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -414,7 +414,7 @@
     border: 1px solid #d3d1d1;
     margin-bottom: 20px;
     margin: 0px 10px 0px 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .c_r_t_sec_r_div ul{
     position: absolute;
