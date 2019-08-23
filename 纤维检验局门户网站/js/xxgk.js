@@ -1,9 +1,9 @@
+//信息公开JS
 
-///信息公开 轮播图
-(() => {
+///轮播图
     var xxgk_right_center_im = $("#xxgk_right_center_im");
     var img = xxgk_right_center_im.find("img");
-    let now_id = xxgk_right_center_im.attr("now_id");
+    var  now_id = xxgk_right_center_im.attr("now_id");
     img.css({
         display: "none"
     });
@@ -16,7 +16,7 @@
             display: "none",
             opacity: "0",
         });
-        let index;
+       var  index;
         if (now_id == 0) {
             index = img.length - 1;
         } else if (0 < now_id <= img.length - 1) {
@@ -37,7 +37,7 @@
             display: "none",
             opacity: "0",
         });
-        let index;
+        var index;
 
         if (now_id == img.length - 1) {
             index = 0;
@@ -53,7 +53,6 @@
             opacity: "1",
         }, 500);
     });
-    setInterval(() => {
+    setInterval(function(){
         $("#xxgk_right_center_ic2").trigger("click");
-    }, 4000);
-})();
+    }, 3000);
