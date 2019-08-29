@@ -117,7 +117,7 @@ $(function(){
                 })
             }
             indextab($("#index_tab1"));
-            $("#index_1_r_tab").find("div").on("click", function () {
+            $("#index_1_r_tab").find("div").on("mouseover", function () {
                 indextab(this);
             })
     
@@ -137,7 +137,7 @@ $(function(){
             $(content[k]).css("display", "block");
         }
         index_tab2(($("#index_2_l_tit").find("[k=0]"))[0]);
-        $("#index_2_l_tit").find("li").on("click", function () {
+        $("#index_2_l_tit").find("li").on("mouseover", function () {
             index_tab2(this);
         });
         //淡入淡出横幅条
